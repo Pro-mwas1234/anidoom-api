@@ -1,0 +1,74 @@
+Anivexa dev server → http://localhost:8002
+→ GET /
+→ GET /episodes/5114
+[ep:senshi] Senshi episodes 502 (MAL 5114)
+[ep:kaa] KAA: no confident match for AniList 5114
+[ep:animenosub] animenosub match not found for AniList 5114
+[ep:2dhive] 2dhive: no player props for mal 5114 ep1
+→ GET /map/5114
+→ GET /episodes/5114
+[ep:senshi] Senshi episodes 502 (MAL 5114)
+[ep:kaa] KAA: no confident match for AniList 5114
+[ep:animenosub] animenosub match not found for AniList 5114
+[ep:2dhive] 2dhive: no player props for mal 5114 ep1
+→ GET /watch/anibd/5114/sub/anibd-1
+→ GET /watch/anizone/5114/sub/anizone-1
+→ GET /watch/anidbapp/5114/sub/anidbapp-1
+→ GET /watch/reanime/5114/sub/reanime-1
+→ GET /watch/anikoto/5114/sub/anikoto-1
+→ GET /watch/reanime/5114/sub/reanime-1
+→ GET /watch/anizone/5114/sub/anizone-1
+→ GET /watch/anidbapp/5114/sub/anidbapp-1
+→ GET /watch/anizone/5114/sub/anizone-1
+→ GET /watch/anidbapp/5114/sub/anidbapp-1
+→ GET /watch/anizone/5114/sub/anizone-1
+→ GET /watch/anidbapp/5114/sub/anidbapp-1
+→ GET /watch/animegg/5114/sub/animegg-1
+→ GET /watch/anizone/5114/sub/anizone-1
+→ GET /watch/anidbapp/5114/sub/anidbapp-1
+→ GET /watch/animedunya/5114/sub/animedunya-1
+→ GET /watch/anidbapp/5114/sub/anidbapp-1
+→ GET /watch/anineko/5114/sub/anineko-1
+→ GET /watch/allmanga/5114/sub/allmanga-1
+→ GET /watch/anizone/5114/sub/anizone-1
+→ GET /watch/anidbapp/5114/sub/anidbapp-1
+→ GET /watch/anizone/5114/dub/anizone-1
+→ GET /watch/anidbapp/5114/dub/anidbapp-1
+→ GET /watch/anikoto/5114/dub/anikoto-1
+→ GET /watch/reanime/5114/dub/reanime-1
+→ GET /watch/anidbapp/5114/dub/anidbapp-1
+→ GET /map/21
+→ GET /episodes/21
+[ep:senshi] Senshi episodes 502 (MAL 21)
+[ep:2dhive] 2dhive: no player props for mal 21 ep1
+→ GET /watch/anibd/21/sub/anibd-1
+→ GET /watch/anizone/21/sub/anizone-1
+→ GET /watch/anidbapp/21/sub/anidbapp-1
+→ GET /watch/reanime/21/sub/reanime-1
+→ GET /watch/reanime/21/sub/reanime-1
+→ GET /watch/anizone/21/sub/anizone-1
+→ GET /watch/anidbapp/21/sub/anidbapp-1
+→ GET /watch/anikoto/21/sub/anikoto-1
+→ GET /watch/anikoto/21/sub/anikoto-1
+→ GET /watch/anizone/21/sub/anizone-1
+→ GET /watch/anidbapp/21/sub/anidbapp-1
+→ GET /watch/reanime/5114/sub/reanime-1
+→ GET /map/189046
+→ GET /episodes/189046
+[ep:kaa] KAA: no search results for AniList 189046
+[ep:senshi] Senshi episodes 502 (MAL 61316)
+[ep:2dhive] 2dhive: no player props for mal 61316 ep1
+[ep:animenosub] animenosub match not found for AniList 189046
+→ GET /watch/anizone/189046/sub/anizone-1
+→ GET /watch/anidbapp/189046/sub/anidbapp-1
+→ GET /map/113415
+→ GET /watch/reanime/189046/sub/reanime-1
+→ GET /episodes/113415
+→ GET /watch/anikoto/189046/sub/anikoto-1
+[ep:senshi] Senshi episodes 502 (MAL 40748)
+[ep:2dhive] 2dhive: no player props for mal 40748 ep1
+→ GET /watch/anizone/113415/sub/anizone-1
+→ GET /watch/anidbapp/113415/sub/anidbapp-1
+→ GET /watch/reanime/113415/sub/reanime-1
+→ GET /watch/anikoto/113415/sub/anikoto-1
+→ GET /watch/anidbapp/113415/sub/anidbapp-1

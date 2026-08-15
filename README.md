@@ -4,7 +4,7 @@
 <img src="docs/logo.svg" width="80" height="80"/>
 
 
-# Anivexa API 2.2
+# Anivexa API 2.2.1
 
 **Anime streaming aggregator API — one endpoint, all your sources.**
 
@@ -28,7 +28,7 @@ It's the backbone powering **[Anivexa](https://github.com/walterwhite-69/Anivexa
 
 | Provider | Status | Notes |
 |---|---|---|
-| **AllManga** | ✅ Active | Large Library |
+| **MKissa** | ✅ Active | Large Library, Note: it may still return 403 error, their backend is one of the trickiest, it works fine but sometimes return "Need Captcha" Error. It might be slow since it will retry if it gets captcha error while requesting|
 | **AnimePahe** | ❌ Removed | Cloudflare JS Challenge — no reliable bypass |
 | **Reanime** | ✅ Active | Solid source for a wide range of titles |
 | **AniKoto** | ✅ Active | Good library, consistent |
@@ -54,7 +54,7 @@ Returns cross-platform ID mappings — MAL, TVDB, TMDB, Kitsu, AniDB, and more.
 GET /episodes/:anilistId
 GET /episodes/:provider[/:provider...]/:anilistId
 ```
-Returns episode lists in a single response with smart background refresh. Pass one or more provider names in the path to filter results — e.g. `/episodes/anizone/allmanga/16498` returns only those two. Omit providers to get all of them.
+Returns episode lists in a single response with smart background refresh. Pass one or more provider names in the path to filter results — e.g. `/episodes/anizone/mkissa/16498` returns only those two. Omit providers to get all of them.
 
 ```
 GET /watch/:provider/:anilistId/sub|dub/:provider-:ep
@@ -73,10 +73,26 @@ GET /stream/reanime/:id/sub|dub/:ep
 ```bash
 git clone https://github.com/walterwhite-69/Anivexa-API
 cd Anivexa-API
+npm install
+cp .env.example .env
 node server.js
 ```
 
 Runs on Node.js. No build step needed.
+
+### Environment variables
+
+Copy `.env.example` to `.env` and fill in the values.
+
+| Variable | Default | Notes |
+|---|---|---|
+| `CACHE_ENABLED` | `false` | Set to `true` to enable caching (memory + disk + Redis). |
+| `UPSTASH_REDIS_REST_URL` | — | From [upstash.com](https://upstash.com). Only used when `CACHE_ENABLED=true`. |
+| `UPSTASH_REDIS_REST_TOKEN` | — | From [upstash.com](https://upstash.com). Only used when `CACHE_ENABLED=true`. |
+| `DEFAULT_REDIS_TTL` | `900` | Seconds. Fallback expiry for Redis writes when a per-item TTL isn't computed. Most cache entries use their own smart TTLs based on anime status (finished/airing/etc.) — this is just the safety-net default. |
+| `PORT` | `4000` | Local dev server port (`server.js` only — ignored on Vercel/serverless). Change it if `4000` is already in use, then hit `http://localhost:PORT`. |
+
+On Vercel (or Railway/Render), set these as regular project environment variables instead of committing `.env`.
 
 ---
 
